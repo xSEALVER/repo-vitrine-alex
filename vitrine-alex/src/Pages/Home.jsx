@@ -2,7 +2,10 @@ import React from 'react';
 import Navbar from '../Components/Navbar';
 import Hero from '../Components/Hero';
 import MainHomeComponents from '../Components/MainHomeComponents.jsx';
-import Prefooter from '../Components/Prefooter';
+// import MainAboutComponents from '../Components/MainAboutComponents.jsx';
+import MainServicesComponents from '../Components/MainServicesComponents.jsx';
+import ServicesComp from '../Components/ServicesComp.jsx';
+// import Prefooter from '../Components/Prefooter';
 import Footer from '../Components/Footer';
 
 function Home() {
@@ -11,7 +14,10 @@ function Home() {
         <Navbar/>
         <Hero/>
         <MainHomeComponents/>
-        <Prefooter/>
+        {/* <MainAboutComponents/> */}
+        <ServicesComp/> 
+        <MainServicesComponents/>
+        {/* <Prefooter/> */}
         <Footer/>
     </>
   )

@@ -1,20 +1,39 @@
-import React from 'react';
-import imageAcc from '../assets/car-accueil.jpg';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // AOS CSS import
+import imageAcc from "../assets/car-accueil.jpg";
 
 const Hero = () => {
-    return (
-        <div className="relative w-full">
-            {/* Background Image */}
-            <img className="w-full h-screen object-cover" src={imageAcc} alt="Accueil" />
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
 
-            {/* Overlay Text */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
-                <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 w-" >L'avenir de la mobilité est là</h1>
-                <p className="text-white text-lg mb-6">Avec Aude Mobilté, trouvez des solutions de transport adaptés à vos besoins.</p>
-                
-            </div>
-        </div>
-    );
+  return (
+    <div className="all-containers relative w-full h-screen">
+      {/* Background Image */}
+      <img className="w-full h-full object-cover" src={imageAcc} alt="Accueil" />
+
+      {/* Overlay Text */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="text-5xl lg:text-7xl font-bold font-serif text-white"
+        >
+          L'avenir de la mobilité est là
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          className="font-semibold text-white text-[1.2rem] max-w-4xl mt-6"
+        >
+          Avec Aude Mobilité, trouvez des solutions de transport adaptés à vos
+          besoins. Nous nous engageons à vous offrir des options sur mesure
+          pour faciliter vos déplacements et améliorer votre quotidien.
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Hero;

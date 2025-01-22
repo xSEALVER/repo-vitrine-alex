@@ -1,20 +1,37 @@
-import React from 'react'
-import imageAbout from '../assets/propos-img-acc.jpg';
-
+import React from "react";
 
 const MainAboutComponents = () => {
   return (
     <>
-        <>
-            <div className=" relative w-full">
-                <img className="w-full h-screen object-cover" src={imageAbout} alt="img-accueil" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
-                    <h1 className='text-white text-3xl px-5 border-4 hover:border-dashed cursor-pointer -skew-x-12 uppercase'>À propos</h1>
-                </div>
-            </div>
-        </>
-    </>
-  )
-}
+      <div className=" ps-5 mt-5">
+        <h3 className=" mb-3">Our History</h3>
+        <p className="">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum
+          iste blanditiis delectus voluptatum vel suscipit optio, laudantium
+          autem eos itaque commodi aliquid laboriosam error nesciunt officia
+          asperiores alias nam? Magnam corrupti, maxime repellendus quidem,
+          perspiciatis ipsa amet nemo placeat atque aliquid eius dolores enim
+          quae dolorum explicabo vero! Quo?
+        </p>
+      </div>
 
-export default MainAboutComponents
+      <div className=" ps-5 mt-5">
+        <h3 className=" mb-3">Our Mission</h3>
+        <p className="">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+          cupiditate maiores. Fuga, labore ab quo assumenda dolor laboriosam at
+          cupiditate rem nostrum voluptatum nesciunt omnis.
+        </p>
+      </div>
+
+      <div className=" ps-5 mt-5">
+        <h3 className=" mb-3">Our Vision</h3>
+        <p className="">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, quia.
+        </p>
+      </div>
+    </>
+  );
+};
+
+export default MainAboutComponents;
