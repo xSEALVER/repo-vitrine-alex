@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const handleScroll = () => {
-    const section = document.getElementById("Services");
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -12,22 +12,34 @@ function Navbar() {
     <nav className="bg-white shadow">
       <div className="container mx-auto flex justify-between items-center px-8 py-4">
         <div className="text-gray-800 text-lg font-semibold">
-          <Link to="/" className="hover:text-blue-600 transition">AudeMobilite</Link>
+          <Link to="/" className="hover:text-blue-600 transition">
+            AudeMobilite
+          </Link>
         </div>
 
         <ul className="flex space-x-6">
           <li>
-            <Link to="/apropos" className="text-gray-800 hover:text-blue-600 transition">À propos</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="text-gray-800 hover:text-blue-600 transition">Contact</Link>
+            <button
+              onClick={() => handleScroll("Apropos")}
+              className="text-gray-800 hover:text-blue-600 transition"
+            >
+              À propos
+            </button>
           </li>
           <li>
             <button
-              onClick={handleScroll}
+              onClick={() => handleScroll("Services")}
               className="text-gray-800 hover:text-blue-600 transition"
             >
               Services
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleScroll("Contact")}
+              className="text-gray-800 hover:text-blue-600 transition"
+            >
+              Contact
             </button>
           </li>
         </ul>
@@ -37,4 +49,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
