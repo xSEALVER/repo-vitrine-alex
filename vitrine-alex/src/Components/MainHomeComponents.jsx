@@ -6,9 +6,10 @@ import React from "react";
 const MainHomeComponents = () => {
   return (
     <>
-      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt-24 h-[85vh] gap-8">
+      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt -[4rem] h-[85vh] gap-8"
+      id="Objectif">
         {/* Texte */}
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center mb-[12rem]">
           <h2 className="text-[2.4rem] font-bold text-orange-500 mb-14 uppercase">
             Notre vision
           </h2>
@@ -36,7 +37,7 @@ const MainHomeComponents = () => {
       </div>
 
       {/* Deuxième div inversée : image à gauche et texte à droite */}
-      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8">
+      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8 mb-[6rem]">
         {/* Image */}
         <div className="w-full md:w-1/2">
           <img

@@ -12,7 +12,8 @@ const FeaturedStory = () => {
         Pourquoi nous choisir ?
       </h2> */}
       {/* First Section: Image Left, Text Right */}
-      <div className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white">
+      <div className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
+      id="Engagement">
         {/* Left Section: Full-Screen Image */}
         <div className="w-full lg:w-1/2 h-full">
           <img

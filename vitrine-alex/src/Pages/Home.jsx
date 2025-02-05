@@ -13,6 +13,7 @@ import ServicesComp from '../Components/ServicesComp.jsx';
 // import Prefooter from '../Components/Prefooter';
 import Footer from '../Components/Footer';
 
+
 function Home() {
   return (
     <>
@@ -30,6 +31,7 @@ function Home() {
         <ContactComp/>
         {/* <Prefooter/> */}
         <Footer/>
+
     </>
   )
 }

@@ -28,6 +28,22 @@ function Navbar() {
           </li>
           <li>
             <button
+              onClick={() => handleScroll("Objectif")}
+              className="text-gray-800 hover:text-blue-600 transition"
+            >
+              Objectif
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => handleScroll("Engagement")}
+              className="text-gray-800 hover:text-blue-600 transition"
+            >
+              Engagement
+            </button>
+          </li>
+          <li>
+            <button
               onClick={() => handleScroll("Services")}
               className="text-gray-800 hover:text-blue-600 transition"
             >
