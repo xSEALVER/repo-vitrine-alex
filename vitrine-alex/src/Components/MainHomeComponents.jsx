@@ -6,19 +6,35 @@ import React from "react";
 const MainHomeComponents = () => {
   return (
     <>
-      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt -[4rem] h-[85vh] gap-8"
-      id="Objectif">
+      <div
+        className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt -[4rem] h-[85vh] gap-8"
+        id="Objectif"
+        data-aos="fade-left"
+        data-aos-delay="500"
+      >
         {/* Texte */}
         <div className="w-full md:w-1/2 p-4 flex flex-col justify-center mb-[12rem]">
-          <h2 className="text-[2.4rem] font-bold text-orange-500 mb-14 uppercase">
+          <h2
+            className="text-[2.4rem] font-bold text-orange-500 mb-14 uppercase"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             Notre vision
           </h2>
-          <p className="text-gray-700 text-[1.4rem] mb-6">
+          <p
+            className="text-gray-700 text-[1.4rem] mb-6"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             Nous nous engageons à transformer la manière dont les déplacements
             sont perçus et vécus, en offrant des solutions de mobilité
             innovantes et durables.
           </p>
-          <p className="text-gray-700 text-[1.4rem] ">
+          <p
+            className="text-gray-700 text-[1.4rem] "
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             Aude Mobilité s'efforce de repousser les limites de la mobilité en
             proposant des services adaptés aux besoins de chacun, tout en
             respectant l'environnement et en favorisant l'inclusion sociale.
@@ -37,7 +53,9 @@ const MainHomeComponents = () => {
       </div>
 
       {/* Deuxième div inversée : image à gauche et texte à droite */}
-      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8 mb-[6rem]">
+      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8 mb-[6rem]"
+      data-aos="fade-right"
+      data-aos-delay="4000">
         {/* Image */}
         <div className="w-full md:w-1/2">
           <img

@@ -12,8 +12,12 @@ const FeaturedStory = () => {
         Pourquoi nous choisir ?
       </h2> */}
       {/* First Section: Image Left, Text Right */}
-      <div className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
-      id="Engagement">
+      <div
+        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        id="Engagement"
+      >
         {/* Left Section: Full-Screen Image */}
         <div className="w-full lg:w-1/2 h-full">
           <img
@@ -37,7 +41,11 @@ const FeaturedStory = () => {
       </div>
 
       {/* Second Section: Text Left, Image Right */}
-      <div className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white">
+      <div
+        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
+        data-aos="fade-left"
+        data-aos-delay="500"
+      >
         {/* Left Section: Text */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full">
           <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
@@ -60,7 +68,11 @@ const FeaturedStory = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white">
+      <div
+        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
+        data-aos="fade-right"
+        data-aos-delay="500"
+      >
         {/* Left Section: Full-Screen Image */}
         <div className="w-full lg:w-1/2 h-full">
           <img
