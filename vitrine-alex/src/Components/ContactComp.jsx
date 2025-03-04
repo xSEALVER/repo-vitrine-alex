@@ -7,11 +7,11 @@ function ContactComp() {
     <div>
       {/* Contact Section */}
       <section
-        className="bg-black py-[16rem] my-[6rem]"
+        className="bg-[#1A2D4D] py-[16rem] my-[6rem]"
         data-aos="fade-down"
         data-aos-delay="500"
       >
-        <div className="container mx-auto flex flex-col md:flex-row justify-around text-center text-gray-700">
+        <div className="container mx-auto flex flex-col md:flex-row justify-around text-center text-[#D5906A]">
           <div className="flex flex-col items-center">
             <MdOutlineMail className="w-8 h-8 mb-4" />
             <p className="font-bold">EMAIL</p>

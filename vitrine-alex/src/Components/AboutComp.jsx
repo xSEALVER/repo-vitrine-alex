@@ -13,7 +13,7 @@ const AboutComp = () => {
         data-aos="fade-left"
         data-aos-delay="500"
       >
-        <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 uppercase">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#EB7526] mb-4 uppercase">
           Un peu d'histoire
         </h2>
         <p className="text-gray-700">
@@ -32,7 +32,7 @@ const AboutComp = () => {
         data-aos-delay="500"
       >
         <div className="md:w-1/2 text-left">
-          <h2 className="text-2xl font-semibold text-red-500">
+          <h2 className="text-2xl font-semibold text-[#EB7526]">
             UN PEU D'HISTOIRE
           </h2>
           <p className="text-gray-600 mt-2">

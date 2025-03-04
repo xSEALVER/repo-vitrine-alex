@@ -6,8 +6,14 @@ import React from "react";
 const MainHomeComponents = () => {
   return (
     <>
+    <div id="Objectif"> 
+
+    </div>
+    <div>
+
+    </div>
       <div
-        className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt -[4rem] h-[85vh] gap-8"
+        className="flex bg-[#EDEDED] items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto mt-[4rem] mb[4rem] h-[85vh] gap-8"
         id="Objectif"
         data-aos="fade-left"
         data-aos-delay="500"
@@ -15,7 +21,7 @@ const MainHomeComponents = () => {
         {/* Texte */}
         <div className="w-full md:w-1/2 p-4 flex flex-col justify-center mb-[12rem]">
           <h2
-            className="text-[2.4rem] font-bold text-orange-500 mb-14 uppercase"
+            className="text-[2.4rem] font-bold text-[#EB7526] mb-14 uppercase"
             data-aos="fade-left"
             data-aos-delay="500"
           >
@@ -53,7 +59,7 @@ const MainHomeComponents = () => {
       </div>
 
       {/* Deuxième div inversée : image à gauche et texte à droite */}
-      <div className="flex bg-white items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8 mb-[6rem]"
+      <div className="flex bg-[#EDEDED] items-stretch duration-300 rounded-lg p-6 max-w-[calc(100%-390px)] mx-auto h-[85vh] gap-8 mb-[6rem] mt-[6rem]"
       data-aos="fade-right"
       data-aos-delay="4000">
         {/* Image */}
@@ -68,7 +74,7 @@ const MainHomeComponents = () => {
 
         {/* Texte aligné à droite */}
         <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-right">
-          <h2 className="text-[2.4rem] font-bold text-orange-500 mb-14 uppercase">
+          <h2 className="text-[2.4rem] font-bold text-[#EB7526] mb-14 uppercase">
             Notre mission
           </h2>
           <p className="text-gray-700 text-[1.4rem] mb-6">
@@ -83,7 +89,7 @@ const MainHomeComponents = () => {
           </p>
         </div>
       </div>
-    </>
+     </>
   );
 };
 

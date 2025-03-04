@@ -10,7 +10,8 @@ const skillsData = [
       <FaCameraRetro className="text-5xl text-primary  group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Nous proposons des solutions de transport ppour les particuliers et les entreprises, adaptées à chaque situation et a chaque demande.",
+    description:
+      "Nous proposons des solutions de transport ppour les particuliers et les entreprises, adaptées à chaque situation et a chaque demande.",
     aosDelay: "0",
   },
   {
@@ -19,7 +20,8 @@ const skillsData = [
       <GiNotebook className="text-5xl text-primary   group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Notre équipe dediée offre un accompagnement personnalisé pour faciiter les déplacements quotidiens et professionnels, en mettant l'accent sur la sécurité, le confort et l'éfficacité .",
+    description:
+      "Notre équipe dediée offre un accompagnement personnalisé pour faciiter les déplacements quotidiens et professionnels, en mettant l'accent sur la sécurité, le confort et l'éfficacité .",
     aosDelay: "500",
   },
   {
@@ -28,19 +30,23 @@ const skillsData = [
       <SlNote className="text-5xl text-primary   group-hover:text-black duration-500" />
     ),
     link: "#",
-    description: "Nous nous engageons à promouvoir une mobilité durable en proposant des solutions de transport respectueuses de l'environnement et encourageant l'adoption de mode de transport  .",
+    description:
+      "Nous nous engageons à promouvoir une mobilité durable en proposant des solutions de transport respectueuses de l'environnement et encourageant l'adoption de mode de transport  .",
     aosDelay: "1000",
   },
 ];
 const ServicesComp = () => {
   return (
     <>
-      <div id="Services" className=" py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
+      <div
+        id="Services"
+        className=" py-14 sm:min-h-[600px] sm:grid sm:place-items-center"
+      >
         <div className="container">
           <div className="pb-12">
             <h2
               data-aos="fade-left"
-              className="text-3xl font-semibold text-center sm:text-4xl font-serif"
+              className="text-3xl font-semibold text-center text-[#EB7526] sm:text-4xl font-serif"
             >
               Nos Services
             </h2>
@@ -51,7 +57,7 @@ const ServicesComp = () => {
                 key={skill.name}
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
-                className="card text-center bg-black group space-y-3 sm:space-y-6 mx-4 p-4 sm:py-16 bg-dark  hover:bg-primary duration-300 text-white hover:text-black hover:bg-yellow-400 rounded-lg"
+                className="card text-center bg-[#1A2D4D] group space-y-3 sm:space-y-6 mx-4 p-4 sm:py-16 bg-dark  hover:bg-custom-red duration-300 text-white hover:text-black  rounded-lg"
               >
                 <div className="grid place-items-center">{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>

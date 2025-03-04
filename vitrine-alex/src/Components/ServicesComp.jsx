@@ -5,13 +5,12 @@ import anotherImage from "../assets/vision.jpg"; // Replace with your second ima
 const FeaturedStory = () => {
   return (
     <>
-      {/* <h2
-        data-aos="fade-left"
-        className="text-3xl font-semibold text-center sm:text-4xl font-serif"
-      >
-        Pourquoi nous choisir ?
-      </h2> */}
-      {/* First Section: Image Left, Text Right */}
+    <div id="Engagement">
+
+    </div>
+      <div>
+
+      </div>
       <div
         className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
         data-aos="fade-up"
@@ -28,11 +27,11 @@ const FeaturedStory = () => {
         </div>
 
         {/* Right Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full">
-          <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED]">
+          <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20 text-black">
             Accompagnement Personnalisé
           </h2>
-          <p className="text-xl text-gray-400 mb-6">
+          <p className="text-xl text-gray-500 mb-6">
             Notre equipe dediee offre un accompagnement personallise pour
             faciliter les deplacements, en mettant l'accent sur la securite, le
             confort et l'efficacite.
@@ -47,11 +46,11 @@ const FeaturedStory = () => {
         data-aos-delay="500"
       >
         {/* Left Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED] text-black">
           <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
             Mobilite durable
           </h2>
-          <p className="text-xl text-gray-400 mb-6">
+          <p className="text-xl text-gray-500 mb-6">
             Nous nous engageons a promouvoir une mobilite durable en integrant
             des solutions respectueuses de l'environment et en encourageant
             l'adoption de modes de transport ecologiques et eco-responsables.
@@ -83,16 +82,16 @@ const FeaturedStory = () => {
         </div>
 
         {/* Right Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED] text-black">
           <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
             Pourquoi Nous ?
           </h2>
-          <p className="text-xl text-gray-400 mb-6">
+          <p className="text-xl text-gray-500 mb-6">
             Nous adoptons une approche novatrice et une methode de service axee
             sur l'excellence, en s'efforcant d'offrir des soluitions de mobilite
             adaptees aux besoins de chacun actuels et futurs.
           </p>
-          <p className="text-[1rem] text-gray-400 mb-6">
+          <p className="text-[1rem] text-gray-500 mb-6">
             Nous bous engageons a fournir des ervices de mobilites fiables,
             efficaces et personnalioses, en mettant l'accent sur l'innovation et
             la satisfacion de nos clients.

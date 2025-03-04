@@ -27,7 +27,7 @@ const BackToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-5 right-5 bg-red-600 text-white px-8 py-4 rounded-full shadow-lg hover:bg-red-700 transition duration-300 z-[9999] uppercase"
+        className="fixed bottom-5 right-5 bg-custom-red text-white px-8 py-4 rounded-full shadow-lg hover:bg-custom-red -700 transition duration-300 z-[9999] uppercase"
         // Ensuring the button stays on top
       >
         ↑

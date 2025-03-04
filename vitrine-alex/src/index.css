@@ -9,9 +9,13 @@
 }
 
 
+/* White color  EDEDED */
+
 html, body {
 overflow-x: hidden;
 scroll-behavior: smooth;
 font-family: 'Roboto', sans-serif;
+background-color: #EDEDED;
+
 
 }
