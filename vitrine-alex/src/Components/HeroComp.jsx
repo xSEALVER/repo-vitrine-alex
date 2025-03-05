@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // AOS CSS import
 import imageAcc from "../assets/car-accueil.jpg";
 
-const Hero = () => {
+const HeroComp = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
@@ -36,4 +36,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroComp;

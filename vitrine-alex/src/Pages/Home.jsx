@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import Hero from '../Components/Hero';
+import HeroComp from '../Components/HeroComp.jsx';
 import AboutComp from '../Components/AboutComp.jsx';
-import MainHomeComponents from '../Components/MainHomeComponents.jsx';
-import MainServicesComponents from '../Components/MainServicesComponents.jsx';
-import ContactComp from '../Components/ContactComp.jsx';
+import ObjectifComp from '../Components/ObjectifComp.jsx';
 import ServicesComp from '../Components/ServicesComp.jsx';
+import ContactComp from '../Components/ContactComp.jsx';
+import EngagementComp from '../Components/EngagementComp.jsx';
 import Footer from '../Components/Footer';
 
 
@@ -13,11 +13,11 @@ function Home() {
   return (
     <>
         <Navbar/>
-        <Hero/>
+        <HeroComp/>
         <AboutComp/>
-        <MainHomeComponents/>
-        <ServicesComp/> 
-        <MainServicesComponents/>
+        <ObjectifComp/>
+        <EngagementComp/> 
+        <ServicesComp/>
         <ContactComp/>
         <Footer/>
     </>

@@ -1,105 +1,81 @@
 import React from "react";
-import sampleImage from "../assets/vision.jpg"; // Replace with your image path
-import anotherImage from "../assets/vision.jpg"; // Replace with your second image path
+import { FaCameraRetro } from "react-icons/fa";
+import { GiNotebook } from "react-icons/gi";
+import { SlNote } from "react-icons/sl";
 
-const FeaturedStory = () => {
+const skillsData = [
+  {
+    name: "TRANSPORT SUR MESURE",
+    icon: (
+      <FaCameraRetro className="text-5xl text-primary  group-hover:text-black duration-300" />
+    ),
+    link: "#",
+    description:
+      "Nous proposons des solutions de transport ppour les particuliers et les entreprises, adaptées à chaque situation et a chaque demande.",
+    aosDelay: "0",
+  },
+  {
+    name: "Accompagnement Personnalisé",
+    icon: (
+      <GiNotebook className="text-5xl text-primary   group-hover:text-black duration-300" />
+    ),
+    link: "#",
+    description:
+      "Notre équipe dediée offre un accompagnement personnalisé pour faciiter les déplacements quotidiens et professionnels, en mettant l'accent sur la sécurité, le confort et l'éfficacité .",
+    aosDelay: "500",
+  },
+  {
+    name: "Mobilité Durable",
+    icon: (
+      <SlNote className="text-5xl text-primary   group-hover:text-black duration-500" />
+    ),
+    link: "#",
+    description:
+      "Nous nous engageons à promouvoir une mobilité durable en proposant des solutions de transport respectueuses de l'environnement et encourageant l'adoption de mode de transport  .",
+    aosDelay: "1000",
+  },
+];
+const ServicesComp = () => {
   return (
     <>
-    <div id="Engagement">
-
-    </div>
-      <div>
-
-      </div>
       <div
-        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
-        data-aos="fade-up"
-        data-aos-delay="500"
-        id="Engagement"
+        id="Services"
+        className=" py-14 sm:min-h-[600px] sm:grid sm:place-items-center"
       >
-        {/* Left Section: Full-Screen Image */}
-        <div className="w-full lg:w-1/2 h-full">
-          <img
-            src={sampleImage}
-            alt="Featured"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        {/* Right Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED]">
-          <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20 text-black">
-            Accompagnement Personnalisé
-          </h2>
-          <p className="text-xl text-gray-500 mb-6">
-            Notre equipe dediee offre un accompagnement personallise pour
-            faciliter les deplacements, en mettant l'accent sur la securite, le
-            confort et l'efficacite.
-          </p>
+        <div className="container">
+          <div className="pb-12">
+            <h2
+              data-aos="fade-left"
+              className="text-3xl font-semibold text-center text-[#EB7526] sm:text-4xl font-serif"
+            >
+              Nos Services
+            </h2>
+          </div>
+          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-4 mb-[10rem]">
+            {skillsData.map((skill) => (
+              <div
+                key={skill.name}
+                data-aos="fade-up"
+                data-aos-delay={skill.aosDelay}
+                className="card text-center bg-[#1A2D4D] group space-y-3 sm:space-y-6 mx-4 p-4 sm:py-16 bg-dark  hover:bg-custom-red duration-300 text-white hover:text-black  rounded-lg"
+              >
+                <div className="grid place-items-center">{skill.icon}</div>
+                <h1 className="text-2xl font-bold">{skill.name}</h1>
+                <p>{skill.description}</p>
+                <a
+                  href={skill.link}
+                  className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
+                >
+                  Learn more
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* Second Section: Text Left, Image Right */}
-      <div
-        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
-        data-aos="fade-left"
-        data-aos-delay="500"
-      >
-        {/* Left Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED] text-black">
-          <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
-            Mobilite durable
-          </h2>
-          <p className="text-xl text-gray-500 mb-6">
-            Nous nous engageons a promouvoir une mobilite durable en integrant
-            des solutions respectueuses de l'environment et en encourageant
-            l'adoption de modes de transport ecologiques et eco-responsables.
-          </p>
-        </div>
-
-        {/* Right Section: Full-Screen Image */}
-        <div className="w-full lg:w-1/2 h-full">
-          <img
-            src={anotherImage}
-            alt="Another Featured"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <div
-        className="relative flex flex-col lg:flex-row items-center w-full h-screen bg-black text-white"
-        data-aos="fade-right"
-        data-aos-delay="500"
-      >
-        {/* Left Section: Full-Screen Image */}
-        <div className="w-full lg:w-1/2 h-full">
-          <img
-            src={sampleImage}
-            alt="Featured"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        {/* Right Section: Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-16 h-full bg-[#EDEDED] text-black">
-          <h2 className="uppercase text-5xl font-semibold tracking-widest mb-20">
-            Pourquoi Nous ?
-          </h2>
-          <p className="text-xl text-gray-500 mb-6">
-            Nous adoptons une approche novatrice et une methode de service axee
-            sur l'excellence, en s'efforcant d'offrir des soluitions de mobilite
-            adaptees aux besoins de chacun actuels et futurs.
-          </p>
-          <p className="text-[1rem] text-gray-500 mb-6">
-            Nous bous engageons a fournir des ervices de mobilites fiables,
-            efficaces et personnalioses, en mettant l'accent sur l'innovation et
-            la satisfacion de nos clients.
-          </p>
-        </div>
-      </div>
+      <div id="Contact"></div>
     </>
   );
 };
 
-export default FeaturedStory;
+export default ServicesComp;
