@@ -317,6 +317,7 @@
 // export default Navbar;
 
 import { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Import icons for the burger menu
 
@@ -328,11 +329,53 @@ function Navbar() {
     document.body.style.overflow = isOpen ? "auto" : "hidden"; // Prevent scrolling when menu is open
   };
 
+  // const handleScroll = (sectionId) => {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth" });
+  //     setIsOpen(false); // Close menu after clicking a link
+  //     document.body.style.overflow = "auto"; // Restore scrolling
+  //   }
+  // };
+
+  // const handleScroll = (sectionId, offset = 140) => {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     const rect = section.getBoundingClientRect();
+  //     const scrollPosition = rect.top + window.pageYOffset - offset;
+
+  //     window.scrollTo({
+  //       top: scrollPosition,
+  //       behavior: "smooth",
+  //     });
+
+  //     setIsOpen(false); // Close menu after clicking a link
+  //     document.body.style.overflow = "auto"; // Restore scrolling
+  //   }
+  // };
+
   const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
+    const offsets = {
+      Engagement: 140, // Custom offset for Engagement
+      Objectif: 27, // Custom offset for Objectif
+      Apropos: 60, // Custom offset for About
+      Services: 80, // Custom offset for Services
+      Contact: 25, // Custom offset for Contact
+    };
+
+    const section = document.getElementById(sectionId); // Use anchor ID
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // Close menu after clicking a link
+      const rect = section.getBoundingClientRect();
+      const scrollPosition =
+        rect.top + window.pageYOffset - (offsets[sectionId] || 100); // Default 100 if not specified
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+
+      setIsOpen(false); // Close menu
       document.body.style.overflow = "auto"; // Restore scrolling
     }
   };
@@ -347,22 +390,27 @@ function Navbar() {
         </div>
 
         {/* Burger Menu Button */}
-        <button className="md:hidden text-white focus:outline-none" onClick={toggleMenu}>
+        <button
+          className="md:hidden text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
-          {["À propos", "Objectif", "Engagement", "Services", "Contact"].map((section) => (
-            <li key={section}>
-              <button
-                onClick={() => handleScroll(section)}
-                className="text-white hover:text-[#D5906A] transition"
-              >
-                {section}
-              </button>
-            </li>
-          ))}
+          {["Apropos", "Objectif", "Engagement", "Services", "Contact"].map(
+            (section) => (
+              <li key={section}>
+                <button
+                  onClick={() => handleScroll(section)}
+                  className="text-white hover:text-[#D5906A] transition"
+                >
+                  {section}
+                </button>
+              </li>
+            )
+          )}
         </ul>
       </div>
 
@@ -372,20 +420,25 @@ function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <button className="absolute top-6 right-6 text-white" onClick={toggleMenu}>
+        <button
+          className="absolute top-6 right-6 text-white"
+          onClick={toggleMenu}
+        >
           <X size={32} />
         </button>
         <ul className="space-y-6 text-center">
-          {["À propos", "Objectif", "Engagement", "Services", "Contact"].map((section) => (
-            <li key={section}>
-              <button
-                onClick={() => handleScroll(section)}
-                className="text-white text-xl hover:text-[#D5906A] transition"
-              >
-                {section}
-              </button>
-            </li>
-          ))}
+          {["Apropos", "Objectif", "Engagement", "Services", "Contact"].map(
+            (section) => (
+              <li key={section}>
+                <button
+                  onClick={() => handleScroll(section)}
+                  className="text-white text-xl hover:text-[#D5906A] transition"
+                >
+                  {section}
+                </button>
+              </li>
+            )
+          )}
         </ul>
       </div>
     </nav>
@@ -393,7 +446,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-
