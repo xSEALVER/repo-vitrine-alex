@@ -167,14 +167,14 @@ const ObjectifComp = () => {
             Notre mission
           </h2>
           <p className="text-gray-700 text-lg md:text-[1.4rem] mb-6">
-            Nous offrons une gamme complète de services de mobilité sur mesure,
+            Nous offrons une gamme de services de mobilité sur mesure,
             répondant aux besoins individuels et collectifs de nos clients.
           </p>
-          <p className="text-gray-700 text-lg md:text-[1.4rem]">
+          {/* <p className="text-gray-700 text-lg md:text-[1.4rem]">
             Aude Mobilité s'efforce de repousser les limites de la mobilité en
             proposant des services adaptés aux besoins de chacun, tout en
             respectant l'environnement et en favorisant l'inclusion sociale.
-          </p>
+          </p> */}
         </div>
       </div>
     </>

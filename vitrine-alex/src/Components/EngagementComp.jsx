@@ -179,8 +179,7 @@ const EngagementComp = () => {
             Pourquoi Nous ?
           </h2>
           <p className="text-lg md:text-xl text-gray-500 mb-4">
-            Nous adoptons une approche novatrice et une méthode de service axée
-            sur l'excellence, en s'efforçant d'offrir des solutions de mobilité
+            Nous adoptons une approche novatrice, en s'efforçant d'offrir des solutions de mobilité
             adaptées aux besoins actuels et futurs.
           </p>
           <p className="text-lg md:text-xl text-gray-500">

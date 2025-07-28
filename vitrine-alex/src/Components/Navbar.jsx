@@ -399,7 +399,7 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
-          {["Apropos", "Objectif", "Engagement", "Services", "Contact"].map(
+          {["À propos", "Objectif", "Engagement", "Services", "Contact"].map(
             (section) => (
               <li key={section}>
                 <button

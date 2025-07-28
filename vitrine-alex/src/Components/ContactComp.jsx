@@ -45,7 +45,7 @@ function ContactComp() {
   return (
     <div>
       {/* Contact Section */}
-      <section
+      {/* <section
         className="bg-[#1A2D4D] py-48 md:py-48 my-[8rem]"
         data-aos="fade-down"
         data-aos-delay="500"
@@ -67,7 +67,7 @@ function ContactComp() {
             <p className="text-sm md:text-base">24 rue Antoinette Besson</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

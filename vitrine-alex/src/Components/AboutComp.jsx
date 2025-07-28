@@ -63,10 +63,10 @@ const AboutComp = () => {
   return (
     <section
       className="flex flex-col items-center text-center py-16 px-4"
-      id="Apropos"
+      id="À propos"
     >
       {/* First Section */}
-      <div
+      {/* <div
         className="max-w-3xl mt-10 mb-10"
         data-aos="fade-left"
         data-aos-delay="500"
@@ -81,7 +81,7 @@ const AboutComp = () => {
           conseillons sur les réparations recommandées et nécessaires, que nous
           effectuons pour vous dans les meilleurs délais dans notre atelier.
         </p>
-      </div>
+      </div> */}
 
       {/* Second Section */}
       <div

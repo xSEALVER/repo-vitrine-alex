@@ -11,7 +11,7 @@
 //           AudeMobilité
 //         </a>
 //         <p class="my-6 text-gray-500 dark:text-gray-400">
-          
+
 //         </p>
 //         <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
 //           <li>
@@ -91,34 +91,60 @@ const Footer = () => {
         </a>
         <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
           <li>
-            <button onClick={() => handleScroll("Apropos")} className="mr-4 hover:underline md:mr-6">
+            <button
+              onClick={() => handleScroll("Apropos")}
+              className="mr-4 hover:underline md:mr-6"
+            >
               À propos
             </button>
           </li>
           <li>
-            <button onClick={() => handleScroll("Objectif")} className="mr-4 hover:underline md:mr-6">
+            <button
+              onClick={() => handleScroll("Objectif")}
+              className="mr-4 hover:underline md:mr-6"
+            >
               Objectif
             </button>
           </li>
           <li>
-            <button onClick={() => handleScroll("Engagement")} className="mr-4 hover:underline md:mr-6">
+            <button
+              onClick={() => handleScroll("Engagement")}
+              className="mr-4 hover:underline md:mr-6"
+            >
               Engagement
             </button>
           </li>
           <li>
-            <button onClick={() => handleScroll("Blog")} className="mr-4 hover:underline md:mr-6">
+            <button
+              onClick={() => handleScroll("Blog")}
+              className="mr-4 hover:underline md:mr-6"
+            >
               Blog
             </button>
           </li>
           <li>
-            <button onClick={() => handleScroll("Contact")} className="mr-4 hover:underline md:mr-6">
+            <button
+              onClick={() => handleScroll("Contact")}
+              className="mr-4 hover:underline md:mr-6"
+            >
               Contact
             </button>
           </li>
         </ul>
+
+        {/* ✅ Email section */}
+        <p className="mb-4 text-gray-400">
+          Contactez-nous :{" "}
+          <a
+            href="mailto:audemobilite@gmail.com"
+            className="underline hover:text-white"
+          >
+            audemobilite@gmail.com
+          </a>
+        </p>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
-          <a href="#" className="hover:underline">
+          <a className="hover:underline">
             Audemobilité™
           </a>
           . Tous droits réservés.
@@ -126,7 +152,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center space-x-6 mt-3">
         <a
-          href="https://www.instagram.com/votre_compte"
+          href="https://www.instagram.com/audemobilite/"
           target="_blank"
           className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           rel="noopener noreferrer"
