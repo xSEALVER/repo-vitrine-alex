@@ -92,7 +92,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS CSS import
-import imageAcc from "../assets/car-accueil.jpg";
+import imageAcc1 from "../assets/ImageAcc1.jpg";
+
 
 const HeroComp = () => {
   useEffect(() => {
@@ -104,7 +105,7 @@ const HeroComp = () => {
       {/* Background Image */}
       <img
         className="w-full h-full object-cover"
-        src={imageAcc}
+        src={imageAcc1}
         alt="Accueil"
       />
 
@@ -112,7 +113,7 @@ const HeroComp = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 sm:px-8 lg:px-16">
         <h1
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="300"
           className="text-3xl sm:text-5xl lg:text-7xl font-bold font-serif text-white leading-tight"
         >
           L'avenir de la mobilité est là

@@ -87,7 +87,7 @@ const AboutComp = () => {
       <div
         className="flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-16 w-full"
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="0"
       >
         <div className="md:w-1/2 text-left mb-8 md:mb-0">
           <h2 className="text-2xl font-semibold text-[#EB7526]">

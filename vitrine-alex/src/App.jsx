@@ -24,6 +24,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/thank-you" element={<ThankYou />} /> 👈 Add this */}
         </Routes>
       </div>
     </Router>

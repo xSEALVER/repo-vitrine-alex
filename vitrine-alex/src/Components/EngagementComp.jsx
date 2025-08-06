@@ -115,7 +115,7 @@ const EngagementComp = () => {
       <div
         className="scroll-to-engagement px-3 relative flex flex-col lg:flex-row items-center w-full bg-[#EDEDED] text-white"
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="50"
       >
         <div className="w-full md:w-1/2 ">
           <img
@@ -140,7 +140,7 @@ const EngagementComp = () => {
       <div
         className="relative flex flex-col-reverse md:flex-row items-center w-full min-h-[60vh] md:min-h-[85vh] bg-[#EDEDED] px-3 text-white"
         data-aos="fade-left"
-        data-aos-delay="500"
+        data-aos-delay="50"
       >
         <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-12 bg-[#EDEDED] text-black">
           <h2 className="uppercase text-2xl md:text-5xl font-semibold tracking-widest mb-6 md:mb-12">
@@ -165,7 +165,7 @@ const EngagementComp = () => {
       <div
         className="relative flex flex-col md:flex-row items-center w-full min-h-[60vh] md:min-h-[85vh] bg-[#EDEDED] px-3 text-white"
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="50"
       >
         <div className="w-full md:w-1/2">
           <img

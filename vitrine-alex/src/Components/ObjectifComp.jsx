@@ -117,7 +117,7 @@ const ObjectifComp = () => {
       <div
         className="flex flex-col md:flex-row bg-[#EDEDED] items-center md:items-stretch duration-300 rounded-lg p-6 max-w-[90%] mx-auto mt-16 mb-16 min-h-[60vh] md:min-h-[85vh] gap-8"
         data-aos="fade-left"
-        data-aos-delay="500"
+        data-aos-delay="200"
       >
         {/* Text */}
         <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-center md:text-left">
@@ -150,7 +150,7 @@ const ObjectifComp = () => {
       <div
         className="flex flex-col-reverse md:flex-row bg-[#EDEDED] items-center md:items-stretch duration-300 rounded-lg p-6 max-w-[90%] mx-auto min-h-[60vh] md:min-h-[85vh] gap-8 mb-16"
         data-aos="fade-right"
-        data-aos-delay="400"
+        data-aos-delay="300"
       >
         {/* Image */}
         <div className="w-full md:w-1/2 flex justify-center">

@@ -427,7 +427,7 @@ function Navbar() {
           <X size={32} />
         </button>
         <ul className="space-y-6 text-center">
-          {["Apropos", "Objectif", "Engagement", "Services", "Contact"].map(
+          {["À propos", "Objectif", "Engagement", "Services", "Contact"].map(
             (section) => (
               <li key={section}>
                 <button

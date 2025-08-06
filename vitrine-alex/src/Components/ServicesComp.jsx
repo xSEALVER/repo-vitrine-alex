@@ -22,7 +22,7 @@ const skillsData = [
     link: "#",
     description:
       "Notre équipe dediée offre un accompagnement personnalisé pour faciiter les déplacements quotidiens et professionnels, en mettant l'accent sur la sécurité, le confort et l'éfficacité .",
-    aosDelay: "500",
+    aosDelay: "300",
   },
   {
     name: "Mobilité Durable",
@@ -32,7 +32,7 @@ const skillsData = [
     link: "#",
     description:
       "Nous nous engageons à promouvoir une mobilité durable en proposant des solutions de transport respectueuses de l'environnement et encourageant l'adoption de mode de transport  .",
-    aosDelay: "1000",
+    aosDelay: "600",
   },
 ];
 const ServicesComp = () => {
@@ -40,10 +40,10 @@ const ServicesComp = () => {
     <>
       <div
         id="Services"
-        className=" py-14 sm:min-h-[600px] sm:grid sm:place-items-center"
+        className=" py-14 sm:min-h-[600px] sm:grid sm:place-items-center "
       >
         <div className="container">
-          <div className="pb-12">
+          <div className="pb-4">
             <h2
               data-aos="fade-left"
               className="text-3xl font-semibold text-center text-[#EB7526] sm:text-4xl font-serif"
@@ -60,8 +60,10 @@ const ServicesComp = () => {
                 className="card text-center bg-[#1A2D4D] group space-y-3 sm:space-y-6 mx-4 p-4 sm:py-16 bg-dark  hover:bg-custom-red duration-300 text-white hover:text-black  rounded-lg"
               >
                 <div className="grid place-items-center">{skill.icon}</div>
+
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
+
                 <a
                   href={skill.link}
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
